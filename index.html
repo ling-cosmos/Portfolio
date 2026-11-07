@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#030814">
   <meta name="description" content="John Cabarles — Computer Science student, developer, and creator of thoughtful digital experiences.">
   <title>John Cabarles — Aimate Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -22,7 +22,7 @@
   </div>
 
   <header class="header shell">
-    <a class="brand" href="#home" aria-label="John Cabarles portfolio home"><span class="torii">鳥</span>JOHN.C<span>.</span></a>
+    <a class="brand" href="#home" aria-label="John Cabarles portfolio home"><span class="brand-mark">JC</span><span class="brand-name">JOHN CABARLES</span><span>.</span></a>
     <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav id="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
     <button class="button outline" data-watch>Watch the reel</button>
@@ -42,23 +42,26 @@
     <section class="section shell" id="about">
       <header class="section-head reveal"><h2>CURIOUS MIND.<br><span>USEFUL WORK.</span></h2><p>I bring development and visual thinking together to turn rough ideas into experiences people can understand and use.</p></header>
       <div class="feature-grid">
-        <article class="glass reveal"><b>創</b><h3>BUILD WITH<br>INTENTION.</h3><p>Clear structure and practical code, shaped around the problem rather than the technology.</p></article>
-        <article class="glass reveal"><b>視</b><h3>DESIGN FOR<br>PEOPLE.</h3><p>User-centered interfaces that balance visual character with clarity and function.</p></article>
-        <article class="glass reveal"><b>学</b><h3>STAY<br>CURIOUS.</h3><p>A learner’s mindset and the patience to keep testing, refining, and improving.</p></article>
+        <article class="glass reveal"><b>01</b><h3>BUILD WITH<br>INTENTION.</h3><p>Clear structure and practical code, shaped around the problem rather than the technology.</p></article>
+        <article class="glass reveal"><b>02</b><h3>DESIGN FOR<br>PEOPLE.</h3><p>User-centered interfaces that balance visual character with clarity and function.</p></article>
+        <article class="glass reveal"><b>03</b><h3>STAY<br>CURIOUS.</h3><p>A learner’s mindset and the patience to keep testing, refining, and improving.</p></article>
       </div>
     </section>
 
     <section class="section shell" id="skills">
       <header class="section-head reveal"><h2>TOOLS THAT<br><span>SHAPE IDEAS.</span></h2><p>My current foundation spans front-end structure, responsive styling, application logic, and interface systems.</p></header>
-      <div class="skill-strip reveal" aria-label="Technical skills"><span>HTML</span><span>CSS</span><span>JAVA</span><span>BOOTSTRAP</span></div>
+      <ul class="skill-strip reveal" aria-label="Technical tools and skills">
+        <li><small>01</small><strong>HTML</strong></li><li><small>02</small><strong>CSS</strong></li><li><small>03</small><strong>Java</strong></li><li><small>04</small><strong>Bootstrap</strong></li><li><small>05</small><strong>Git</strong></li>
+        <li><small>06</small><strong>JavaScript</strong></li><li><small>07</small><strong>PHP</strong></li><li><small>08</small><strong>Python</strong></li><li><small>09</small><strong>MySQL</strong></li><li><small>10</small><strong>GitHub</strong></li>
+      </ul>
     </section>
 
     <section class="section collection" id="projects">
       <header class="section-head shell reveal"><h2>SELECTED<br><span>PROJECTS.</span></h2><p>Real applications for personal productivity, academic administration, and safer digital communication.</p></header>
       <div class="gallery">
-        <a class="clip project-clip reveal" href="https://cabus-tracker.repulse-coach-worker.workers.dev/" target="_blank" rel="noreferrer" aria-label="Open the live CABUS website"><img src="assets/CABUS.svg" alt="CABUS four-in-one tracker dashboard"><span>CABUS<small>Goals, tasks, fitness, and expenses · Open live website ↗</small></span></a>
-        <a class="clip project-clip reveal" href="https://github.com/ling-cosmos/Student-Enrollment-Information-System-Public" target="_blank" rel="noreferrer" aria-label="View Student Enrollment Information System on GitHub"><img src="assets/SEIS.svg" alt="Student Enrollment Information System dashboard"><span>STUDENT ENROLLMENT<small>PHP + MySQL academic management · View project ↗</small></span></a>
-        <a class="clip project-clip reveal" href="https://github.com/ling-cosmos/scamsignal" target="_blank" rel="noreferrer" aria-label="View ScamSignal on GitHub"><img src="assets/ScamSignal.svg" alt="ScamSignal suspicious-message checker"><span>SCAMSIGNAL<small>Private message and link risk checker · View project ↗</small></span></a>
+        <a class="clip project-clip reveal" href="https://cabus-tracker.repulse-coach-worker.workers.dev/" target="_blank" rel="noreferrer" aria-label="Open the live CABUS website"><img src="assets/CABUS.svg" alt="CABUS four-in-one tracker dashboard"><span><em>LIVE WEB APP</em>CABUS<small>Goals, tasks, fitness, and expenses <i>Open website ↗</i></small></span></a>
+        <a class="clip project-clip reveal" href="https://github.com/ling-cosmos/Student-Enrollment-Information-System-Public" target="_blank" rel="noreferrer" aria-label="View Student Enrollment Information System on GitHub"><img src="assets/SEIS.svg" alt="Student Enrollment Information System dashboard"><span><em>PUBLIC SOURCE</em>STUDENT ENROLLMENT<small>PHP + MySQL academic management <i>View project ↗</i></small></span></a>
+        <a class="clip project-clip reveal" href="https://github.com/ling-cosmos/scamsignal" target="_blank" rel="noreferrer" aria-label="View ScamSignal on GitHub"><img src="assets/ScamSignal.svg" alt="ScamSignal suspicious-message checker"><span><em>PUBLIC SOURCE</em>SCAMSIGNAL<small>Private message and link risk checker <i>View project ↗</i></small></span></a>
       </div>
     </section>
 
@@ -70,7 +73,7 @@
     <section class="section shell" id="contact"><div class="glass cta reveal"><p>LET’S CREATE SOMETHING USEFUL</p><h2>START A<br><span>CONVERSATION.</span></h2><div class="contact-links"><a class="button primary" href="mailto:j.cabarles.555471@umindanao.edu.ph">Email me</a><a href="tel:+639090438514">+63 909 043 8514</a></div></div></section>
   </main>
 
-  <footer class="footer shell"><a class="brand" href="#home"><span class="torii">鳥</span>JOHN.C<span>.</span></a><p>Ideas into experience.</p><small>© 2026 John Cabarles</small></footer>
+  <footer class="footer shell"><a class="brand" href="#home"><span class="brand-mark">JC</span><span class="brand-name">JOHN CABARLES</span><span>.</span></a><p>Ideas into experience.</p><small>© 2026 John Cabarles</small></footer>
 
   <dialog id="film-dialog"><button class="close" aria-label="Close reel">×</button><h2>AIMATE REEL</h2><video id="film-player" controls playsinline preload="none" poster="assets/poster.jpg"></video></dialog>
 </body>
