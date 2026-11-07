@@ -1,6 +1,6 @@
-# Aimate
+# John Cabarles — Aimate Portfolio
 
-A cinematic anime portfolio landing page built around the supplied `Aimate.mp4` film.
+A cinematic personal portfolio for John Cabarles, built around the supplied `Aimate.mp4` film and the profile, skills, projects, and contact details from [`ling-cosmos/portfolio_v1`](https://github.com/ling-cosmos/portfolio_v1).
 
 ## Run locally
 
@@ -15,6 +15,6 @@ Open `http://127.0.0.1:4176/`.
 - Full-screen 2560×1440 video background with an HD poster fallback
 - Deep-blue cinematic grade, mist, grain, bloom, and atmospheric particles
 - Ten animated canvas butterflies with pointer avoidance
-- Responsive hero, feature cards, scene gallery, story, and CTA sections
+- Responsive personal hero, skills, project gallery, profile story, and contact sections
 - Reduced-motion, Save-Data, visibility, and manual motion controls
 - No runtime dependencies or third-party requests
