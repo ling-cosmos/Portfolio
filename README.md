@@ -16,5 +16,6 @@ Open `http://127.0.0.1:4176/`.
 - Deep-blue cinematic grade, mist, grain, bloom, and atmospheric particles
 - Ten animated canvas butterflies with pointer avoidance
 - Responsive personal hero, skills, project gallery, profile story, and contact sections
+- Featured CABUS 4-in-1 tracker with a direct link to its GitHub repository
 - Reduced-motion, Save-Data, visibility, and manual motion controls
 - No runtime dependencies or third-party requests
