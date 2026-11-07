@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#030814">
+  <meta name="description" content="Aimate — anime moments beyond the frame.">
+  <title>AIMATE — Beyond the frame</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="world" aria-hidden="true">
+    <div class="video-plane">
+      <img class="poster" src="assets/poster.jpg" alt="">
+      <video id="background-video" muted loop playsinline preload="auto" poster="assets/poster.jpg" data-src="assets/Aimate.mp4"></video>
+    </div>
+    <div class="shade"></div><div class="bloom"></div><div class="vignette"></div>
+    <div class="mist mist-a"></div><div class="mist mist-b"></div>
+    <canvas id="atmosphere"></canvas><div class="grain"></div>
+  </div>
+
+  <header class="header shell">
+    <a class="brand" href="#home" aria-label="Aimate home"><span class="torii">鳥</span>AIMATE<span>.</span></a>
+    <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main navigation"><a href="#world">World</a><a href="#clips">Collection</a><a href="#about">Story</a><a href="#join">Connect</a></nav>
+    <button class="button outline" data-watch>Watch the film</button>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">夜を越えて · BEYOND THE NIGHT</p>
+        <h1>BEYOND<br><span>THE FRAME.</span></h1>
+        <p class="lede">Some moments aren't meant to end. Anime worlds, cinematic edits, and a feeling that stays.</p>
+        <div class="actions"><button class="button primary" data-watch>Enter the night</button><a href="#clips">Explore the collection →</a></div>
+      </div>
+      <div class="hero-foot"><span>Made for the moments you feel.</span><a href="#world">Scroll to discover ↓</a><button id="motion-toggle" aria-pressed="false">Motion on</button></div>
+    </section>
+
+    <section class="section shell" id="world">
+      <header class="section-head reveal"><h2>MORE THAN<br><span>A MOMENT.</span></h2><p>For the scene you replay, the world you get lost in, and the feeling you cannot quite explain.</p></header>
+      <div class="feature-grid">
+        <article class="glass reveal"><b>景</b><h3>EVERY FRAME,<br>A FEELING.</h3><p>Beautiful worlds, quiet details, and atmosphere that pulls you all the way in.</p></article>
+        <article class="glass reveal"><b>瞬</b><h3>CUT TO<br>THE MOMENT.</h3><p>From the calm before the storm to the scene you never saw coming.</p></article>
+        <article class="glass reveal"><b>心</b><h3>SAME WORLD.<br>YOUR PEOPLE.</h3><p>For everyone who finished an anime and wished they could stay a little longer.</p></article>
+      </div>
+    </section>
+
+    <section class="section collection" id="clips">
+      <header class="section-head shell reveal"><h2>ONE MORE<br><span>SCENE.</span></h2><p>Four scene studies from the opening film. Tap any frame to enter the night.</p></header>
+      <div class="gallery">
+        <button class="clip sun" data-watch><img src="assets/poster.jpg" alt="Luminous blue sun behind a mountain"><span>THE LAST LIGHT<small>Where the night begins</small></span></button>
+        <button class="clip pagoda" data-watch><img src="assets/poster.jpg" alt="Pagoda in a blue night sky"><span>QUIET MAGIC<small>Somewhere beyond the noise</small></span></button>
+        <button class="clip lake" data-watch><img src="assets/poster.jpg" alt="Blue reflections on a misty lake"><span>AZURE REFLECTIONS<small>Between waking and dreaming</small></span></button>
+        <button class="clip maple" data-watch><img src="assets/poster.jpg" alt="Maple branches framing the night"><span>LET IT FALL AWAY<small>One leaf, a thousand stories</small></span></button>
+      </div>
+    </section>
+
+    <section class="section shell about" id="about">
+      <div class="moon reveal" aria-hidden="true">余韻</div>
+      <article class="glass story reveal"><h2>THE STORY ENDS.<br><span>THE FEELING DOESN'T.</span></h2><p>You know that moment. The credits roll, the music fades, and part of you is still somewhere else.</p><p>Aimate lives in that space—a love letter to impossible worlds and the little moments that mean everything.</p></article>
+    </section>
+
+    <section class="section shell" id="join"><div class="glass cta reveal"><p>夜 · THE NIGHT IS WAITING</p><h2>YOUR NEXT<br><span>OBSESSION AWAITS.</span></h2><button class="button primary" data-watch>Replay the feeling</button></div></section>
+  </main>
+
+  <footer class="footer shell"><a class="brand" href="#home"><span class="torii">鳥</span>AIMATE<span>.</span></a><p>Made of moments. Made for you.</p><small>© 2026 Aimate</small></footer>
+
+  <dialog id="film-dialog"><button class="close" aria-label="Close film">×</button><h2>ENTER THE NIGHT</h2><video id="film-player" controls playsinline preload="none" poster="assets/poster.jpg"></video></dialog>
+</body>
+</html>
