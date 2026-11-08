@@ -117,6 +117,23 @@
   menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
   nav.addEventListener('click', () => { nav.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); });
 
+  const copyEmail = $('#copy-email');
+  const emailAddress = $('#contact-email');
+  const copyStatus = $('#copy-email-status');
+  if (copyEmail && emailAddress && copyStatus) {
+    copyEmail.hidden = false;
+    copyEmail.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(emailAddress.value);
+        copyStatus.textContent = 'Email address copied. Paste it into your email service to write a message.';
+      } catch {
+        emailAddress.focus();
+        emailAddress.select();
+        copyStatus.textContent = 'Copy is unavailable here. The email address is selected; use your device’s Copy command.';
+      }
+    });
+  }
+
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .08 });
     $$('.reveal').forEach(element => observer.observe(element));

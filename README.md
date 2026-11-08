@@ -24,4 +24,5 @@ Open `http://127.0.0.1:4176/`.
 - Boja opens a clearly labeled, sample-data concept preview with browsable cases, documents, and deadlines; no private vault files are included
 - Databases certification section with an accessible preview and original certificate PDF
 - Reduced-motion, Save-Data, visibility, and manual motion controls
+- Browser-native contact options with a visible email address, copy support, Gmail compose link, and optional email-app link
 - No runtime dependencies or third-party requests
