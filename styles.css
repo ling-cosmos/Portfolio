@@ -31,6 +31,7 @@
 
 @media(max-width:800px){
   .header{height:72px;padding-inline:14px}.header nav{top:72px}.brand-name{display:none}.hero{padding-top:72px}
+  .header .menu{margin-left:auto}
   .skill-strip{grid-template-columns:1fr 1fr}.skill-strip li{min-height:125px}
   .gallery{width:calc(100% - 48px);grid-template-columns:1fr}.project-clip{aspect-ratio:16/11}.section+.section::before{width:calc(100% - 48px)}
 }

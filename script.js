@@ -24,7 +24,7 @@
     orbitY: .055 + (i % 4) * .012, flap: 7.1 + (i % 5) * .85,
     alpha: .58 + (i % 4) * .1
   }));
-  const running = () => !paused && !document.hidden && !document.querySelector('dialog[open]');
+  const running = () => !paused && !document.hidden;
 
   function seed() {
     particles = Array.from({ length: innerWidth < 700 ? 35 : 75 }, (_, i) => ({
@@ -116,11 +116,6 @@
   const menu = $('.menu'), nav = $('#nav');
   menu.addEventListener('click', () => { const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); });
   nav.addEventListener('click', () => { nav.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); });
-
-  const dialog = $('#film-dialog'), player = $('#film-player');
-  $$('[data-watch]').forEach(button => button.addEventListener('click', () => { player.src = 'assets/Aimate.mp4'; dialog.showModal(); syncMotion(); }));
-  $('.close').addEventListener('click', () => dialog.close());
-  dialog.addEventListener('close', () => { player.pause(); player.removeAttribute('src'); player.load(); syncMotion(); });
 
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .08 });

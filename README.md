@@ -18,6 +18,6 @@ Open `http://127.0.0.1:4176/`.
 - Responsive personal hero, skills, project gallery, profile story, and contact sections
 - Tools matrix covering HTML, CSS, Java, Bootstrap, Git, JavaScript, PHP, Python, MySQL, and GitHub
 - Featured CABUS tracker linking to its live website
-- Student Enrollment Information System and ScamSignal project links
+- Student Enrollment Information System and ScamSignal cards open hosted read-only web previews
 - Reduced-motion, Save-Data, visibility, and manual motion controls
 - No runtime dependencies or third-party requests
