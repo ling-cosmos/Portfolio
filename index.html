@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#030814">
   <meta name="description" content="John Cabarles is a Computer Science student building web applications with JavaScript, PHP, Python, and MySQL. Explore his productivity, enrollment, and digital safety projects.">
   <title>John Cabarles — Aimate Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
   <script src="script.js?v=4" defer></script>
 </head>
 <body>
@@ -24,7 +24,7 @@
   <header class="header shell">
     <a class="brand" href="#home" aria-label="John Cabarles portfolio home"><span class="brand-mark">JC</span><span class="brand-name">JOHN CABARLES</span><span>.</span></a>
     <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
-    <nav id="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a></nav>
+    <nav id="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#team-projects">Team projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main id="main">
@@ -62,6 +62,33 @@
         <a class="clip project-clip reveal" href="https://ling-cosmos.github.io/Student-Enrollment-Information-System-Public/" target="_blank" rel="noreferrer" aria-label="Open Student Enrollment read-only preview"><img src="assets/SEIS.svg" alt="Student Enrollment Information System dashboard"><span><em>READ-ONLY PREVIEW</em>STUDENT ENROLLMENT<small>PHP + MySQL academic management <i>View project ↗</i></small></span></a>
         <a class="clip project-clip reveal" href="https://ling-cosmos.github.io/scamsignal/" target="_blank" rel="noreferrer" aria-label="Open ScamSignal read-only preview"><img src="assets/ScamSignal.svg" alt="ScamSignal suspicious-message checker"><span><em>READ-ONLY PREVIEW</em>SCAMSIGNAL<small>Private message and link risk checker <i>View project ↗</i></small></span></a>
       </div>
+    </section>
+
+    <section class="section shell" id="team-projects" aria-labelledby="team-projects-title">
+      <header class="section-head reveal"><h2 id="team-projects-title">BUILDING<br><span>TOGETHER.</span></h2><p>Alaga and Boja are projects I work on with my team members. They give me opportunities to collaborate on shared code, improve reliability, and support a clear development process.</p></header>
+      <div class="contribution-grid">
+        <article class="contribution glass reveal" aria-labelledby="alaga-title">
+          <div class="contribution-heading"><h3 id="alaga-title">Alaga</h3><span class="contribution-status">Team project</span></div>
+          <p class="contribution-context">Medicine care log for families</p>
+          <p class="team-project-description">An Android-first student prototype that helps caregivers coordinate medicine schedules, record doses, track inventory, and review care history. Built with Expo, React Native, a Node.js API, and PostgreSQL.</p>
+          <h4>My contribution: reliable reminders</h4>
+          <p>I updated the reminder planner to schedule each dose occurrence once and consistently use the latest requested time. I added regression tests for repeated entries, revised times, and existing reminders.</p>
+          <ul class="contribution-tools" aria-label="Alaga technologies"><li>React Native</li><li>TypeScript</li><li>Node.js</li><li>PostgreSQL</li></ul>
+          <p class="contribution-note">My reminder fix includes regression coverage and passed the 279-test suite. It was submitted as a draft while existing Expo dependency mismatches await resolution. The project uses synthetic demo data.</p>
+          <div class="team-project-links"><a class="contribution-link" href="https://github.com/kaelxoxo/prog_lang" target="_blank" rel="noreferrer">View Alaga repository <span aria-hidden="true">↗</span></a><a class="contribution-detail-link" href="https://github.com/kaelxoxo/prog_lang/pull/6" target="_blank" rel="noreferrer">My contribution · PR #6 ↗</a></div>
+        </article>
+        <article class="contribution glass reveal" aria-labelledby="boja-title">
+          <div class="contribution-heading"><h3 id="boja-title">Boja</h3><span class="contribution-status">Team project</span></div>
+          <p class="contribution-context">Law office management system project</p>
+          <p class="team-project-description">A team project planning an integrated workspace for cases, documents, hearings, deadlines, and billing. The linked repository is our documentation vault, containing requirements, design decisions, and project evidence.</p>
+          <h4>My contribution: documentation checks</h4>
+          <p>I added Python checks for required note metadata and missing wikilink pages, then connected them to GitHub Actions. Contributors receive clear findings when a note needs attention.</p>
+          <ul class="contribution-tools" aria-label="Boja contribution skills"><li>Python</li><li>GitHub Actions</li><li>Documentation tooling</li></ul>
+          <p class="contribution-note">Five automated tests cover valid and invalid notes. The contribution passed CI and was submitted for maintainer review.</p>
+          <div class="team-project-links"><a class="contribution-link" href="https://github.com/kaelxoxo/boja-law-office-project-vault" target="_blank" rel="noreferrer">View Boja project vault <span aria-hidden="true">↗</span></a><a class="contribution-detail-link" href="https://github.com/kaelxoxo/boja-law-office-project-vault/pull/21" target="_blank" rel="noreferrer">My contribution · PR #21 ↗</a></div>
+        </article>
+      </div>
+      <p class="contribution-footnote">Built collaboratively with my team members. The linked pull requests document my submitted changes and their latest review status.</p>
     </section>
 
     <section class="section shell" id="certificates" aria-labelledby="certificates-title">

@@ -19,6 +19,7 @@ Open `http://127.0.0.1:4176/`.
 - Tools matrix covering HTML, CSS, Java, Bootstrap, Git, JavaScript, PHP, Python, MySQL, and GitHub
 - Featured CABUS tracker linking to its live website
 - Student Enrollment Information System and ScamSignal cards open hosted read-only web previews
+- Alaga and Boja team project showcases with project repositories, individual contribution details, and submitted pull requests
 - Databases certification section with an accessible preview and original certificate PDF
 - Reduced-motion, Save-Data, visibility, and manual motion controls
 - No runtime dependencies or third-party requests
