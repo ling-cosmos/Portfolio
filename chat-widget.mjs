@@ -1,4 +1,4 @@
-import {EMAIL,createChatState,welcome,respond,buildBrief,draftLinks} from './chat-model.mjs?v=2';
+import {EMAIL,createChatState,welcome,respond,buildBrief,draftLinks} from './chat-model.mjs?v=3';
 
 const launcher=document.querySelector('#chat-launcher');
 const panel=document.querySelector('#portfolio-chat');
