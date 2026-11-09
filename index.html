@@ -8,6 +8,8 @@
   <title>John Cabarles — Aimate Portfolio</title>
   <link rel="stylesheet" href="styles.css?v=11">
   <script src="script.js?v=5" defer></script>
+  <link rel="stylesheet" href="chat.css?v=1">
+  <script type="module" src="chat-widget.mjs?v=1"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -96,5 +98,22 @@
 
   <footer class="footer shell"><a class="brand" href="#home"><span class="brand-mark">JC</span><span class="brand-name">JOHN CABARLES</span><span>.</span></a><p>Ideas into experience.</p><small>© 2026 John Cabarles</small></footer>
 
+  <button class="chat-launcher" id="chat-launcher" type="button" aria-controls="portfolio-chat" aria-expanded="false" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-8 8H5l-4 3v-11a9 9 0 0 1 19 0Z"/><path d="M6 11h9m-9 4h6"/></svg>Ask about a project</button>
+  <section class="chat-widget" id="portfolio-chat" role="dialog" aria-modal="false" aria-labelledby="chat-title" hidden>
+    <header class="chat-heading"><div><h2 id="chat-title">John’s portfolio guide</h2><p>Automated FAQ &amp; project inquiries</p></div><button class="chat-close" id="chat-close" type="button" aria-label="Close portfolio chat">×</button></header>
+    <div class="chat-toolbar"><button id="chat-contact" type="button">Contact John</button><button id="chat-new" type="button">New chat</button></div>
+    <div class="chat-conversation" id="chat-conversation">
+      <div class="chat-log" id="chat-log" role="log" aria-label="Portfolio chat messages" aria-live="polite" aria-relevant="additions text"></div>
+      <div class="chat-suggestions" id="chat-suggestions" aria-label="Suggested questions"></div>
+      <form class="chat-form" id="chat-form"><label class="chat-sr-only" for="chat-message">Message to portfolio guide</label><textarea id="chat-message" maxlength="700" rows="1" placeholder="Ask about skills, projects, or an inquiry…" required></textarea><button type="submit">Send</button></form>
+      <p class="chat-privacy">Chat stays in this visit. You choose what to send by email.</p>
+    </div>
+    <div class="chat-review" id="chat-review" hidden>
+      <button class="chat-back" id="chat-back" type="button">← Back to chat</button><h3>Review your inquiry</h3><p>You can edit the draft below before opening your email service.</p><p class="chat-recipient">To: <span id="chat-recipient"></span></p>
+      <label for="chat-summary">Inquiry draft</label><textarea id="chat-summary" maxlength="5000" rows="8"></textarea>
+      <div class="chat-draft-actions"><a id="chat-gmail" href="https://mail.google.com/mail/" target="_blank" rel="noreferrer">Open Gmail draft ↗</a><button id="chat-copy" type="button">Copy inquiry</button></div>
+      <a class="chat-email-app" id="chat-email-app" href="mailto:j.cabarles.555471@umindanao.edu.ph">Use your email app</a><p id="chat-draft-status" role="status" aria-live="polite"></p>
+    </div>
+  </section>
 </body>
 </html>

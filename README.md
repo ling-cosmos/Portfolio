@@ -26,8 +26,12 @@ Open `http://127.0.0.1:4176/`.
 - Databases certification section with an accessible preview and original certificate PDF
 - Reduced-motion, Save-Data, visibility, and manual motion controls
 - Browser-native contact options with a visible email address, copy support, Gmail compose link, and optional email-app link
+- Floating automated portfolio guide for verified FAQs, project-demo links, and a short client-inquiry flow
+- Editable inquiry drafts with explicit Gmail/email-app handoff and a copy fallback; the chat does not send mail, store conversations, or promise prices or response times
 - No runtime dependencies or third-party requests
 
 ## Demo checks
 
 Run `node previews/demo-models.test.mjs` for enrollment validation, dose/stock invariants, linked case workflows, and message-rule regressions. Demo changes live only in memory for the current visit. See `previews/README.md` for provenance and browser walkthroughs.
+
+Run `node chat-model.test.mjs` for FAQ boundaries, inquiry context, human handoff, draft encoding, and input validation. Portfolio answers and destinations are maintained in `chat-model.mjs`; update them alongside the visible portfolio when projects or credentials change. The guide is a local FAQ/inquiry assistant, not an LLM or live agent. Visitors review and send the email draft themselves. No chat analytics, backend, API keys, or automatic email delivery are configured.
