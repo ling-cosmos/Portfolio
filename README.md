@@ -17,12 +17,17 @@ Open `http://127.0.0.1:4176/`.
 - Ten animated canvas butterflies with pointer avoidance
 - Responsive personal hero, skills, project gallery, profile story, and contact sections
 - Tools matrix covering HTML, CSS, Java, Bootstrap, Git, JavaScript, PHP, Python, MySQL, and GitHub
-- Featured CABUS tracker linking to its live website
-- Student Enrollment Information System and ScamSignal cards open hosted read-only web previews
-- Alaga and Boja appear in the main Projects gallery beside CABUS, Student Enrollment, and ScamSignal
-- Alaga opens a read-only walkthrough of actual Android screenshots from the public project repository
-- Boja opens a clearly labeled, sample-data concept preview with browsable cases, documents, and deadlines; no private vault files are included
+- All five Projects cards open interactive browser demos without requiring an account
+- CABUS supports tasks, goal milestones, workouts, budgets, and expenses, with a separate link to its full hosted app
+- Student Enrollment supports sample registration, course capacity, enrollments, withdrawal, and reports
+- ScamSignal runs the project's deterministic message checks locally, with English and Filipino samples
+- Alaga supports confirmed synthetic dose outcomes, undo, stock, and retained demo history; its actual Android screenshots remain available
+- Boja supports a fictional case workspace with document index entries and deadlines; it remains a clearly labeled portfolio concept, with no private vault files
 - Databases certification section with an accessible preview and original certificate PDF
 - Reduced-motion, Save-Data, visibility, and manual motion controls
 - Browser-native contact options with a visible email address, copy support, Gmail compose link, and optional email-app link
 - No runtime dependencies or third-party requests
+
+## Demo checks
+
+Run `node previews/demo-models.test.mjs` for enrollment validation, dose/stock invariants, linked case workflows, and message-rule regressions. Demo changes live only in memory for the current visit. See `previews/README.md` for provenance and browser walkthroughs.
