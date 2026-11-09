@@ -6,6 +6,7 @@ export const PROJECTS = [
   {name:'ScamSignal',pattern:/scam\s*signal/i,url:'previews/scamsignal.html',text:'ScamSignal looks for warning signs in messages and links. The browser demo runs local pattern checks, without storing messages or calling an AI service. A result is not a guarantee of safety.'},
   {name:'Alaga',pattern:/\balaga\b/i,url:'previews/alaga.html',text:'Alaga is a team medicine care-log project. The browser demo simulates synthetic dose records, undo, stock, and history. Actual Android screenshots are also available; the browser demo does not deliver reminders.'},
   {name:'Boja',pattern:/\bboja\b/i,url:'previews/boja.html',text:'Boja is a team law-office management project. Its public demo is an interactive concept with fictional cases, document entries, and deadlines. It is not the team’s application or approved design.'},
+  {name:'Client Chatbot',pattern:/client chat(?:bot)?|portfolio (chatbot|guide)|\bchatbot\b/i,url:'previews/chatbot.html',text:'Client Chatbot is John’s automated portfolio FAQ and inquiry guide. Its full-page demo answers portfolio questions and prepares an editable email draft for the visitor to review and send. It does not send email automatically or provide live human support.'},
 ];
 const prompts = {
   request:'What would you like to build or improve, and who is it for? A few sentences are enough.',
@@ -34,7 +35,7 @@ function faqAnswer(state,intent,input){
   let text='',links=[];
   if(intent==='guide')text='I’m John’s automated FAQ and inquiry guide. I can explain the portfolio, link to project demos, and help prepare an email inquiry. John reviews inquiries by email; this chat does not book work, send messages, or provide live human support.';
   if(intent==='skills'){text='John is a Computer Science student developing web interfaces, application logic, and database workflows. His listed tools are HTML, CSS, JavaScript, Bootstrap, Java, PHP, Python, MySQL, Git, and GitHub. Project fit is something to discuss with him directly.';links=[['View skills','#skills']];}
-  if(intent==='projects'){text='You can try five interactive demos. Changes use sample data and can be reset. Alaga is a browser simulation of its care-log workflows; Boja is a clearly labeled concept.';links=PROJECTS.map(p=>[`Try ${p.name}`,p.url]);}
+  if(intent==='projects'){text=`You can try ${PROJECTS.length} interactive demos. The tracker and workflow demos use resettable sample data. Alaga is a browser simulation of its care-log workflows; Boja is a clearly labeled concept. Client Chatbot helps with portfolio questions and inquiry drafts.`;links=PROJECTS.map(p=>[`Try ${p.name}`,p.url]);}
   if(intent==='named'){const matches=PROJECTS.filter(p=>p.pattern.test(input));text=matches.map(p=>p.text).join('\n\n');links=matches.map(p=>[`Try ${p.name}`,p.url]);}
   if(intent==='about'){text='John Cabarles is a Computer Science student based in the Philippines. His portfolio focuses on practical applications for productivity, academic administration, digital safety, and team projects.';links=[['Read about John','#story']];}
   if(intent==='certificate'){text='The portfolio includes an Information Technology Specialist certificate in Databases from Certiport, awarded March 6, 2026 and valid through March 6, 2031. You can view the certificate on the page.';links=[['View certificate','#certificates']];}

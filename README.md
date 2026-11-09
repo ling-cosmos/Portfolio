@@ -17,7 +17,7 @@ Open `http://127.0.0.1:4176/`.
 - Ten animated canvas butterflies with pointer avoidance
 - Responsive personal hero, skills, project gallery, profile story, and contact sections
 - Tools matrix covering HTML, CSS, Java, Bootstrap, Git, JavaScript, PHP, Python, MySQL, and GitHub
-- All five Projects cards open interactive browser demos without requiring an account
+- All six Projects cards open interactive browser demos without requiring an account
 - CABUS supports tasks, goal milestones, workouts, budgets, and expenses, with a separate link to its full hosted app
 - Student Enrollment supports sample registration, course capacity, enrollments, withdrawal, and reports
 - ScamSignal runs the project's deterministic message checks locally, with English and Filipino samples
@@ -27,6 +27,7 @@ Open `http://127.0.0.1:4176/`.
 - Reduced-motion, Save-Data, visibility, and manual motion controls
 - Browser-native contact options with a visible email address, copy support, Gmail compose link, and optional email-app link
 - Floating automated portfolio guide for verified FAQs, project-demo links, and a short client-inquiry flow
+- Client Chatbot has its own Projects card and full-page demo at `previews/chatbot.html`, sharing the same FAQ and inquiry flow as the floating guide
 - Editable inquiry drafts with explicit Gmail/email-app handoff and a copy fallback; the chat does not send mail, store conversations, or promise prices or response times
 - No runtime dependencies or third-party requests
 

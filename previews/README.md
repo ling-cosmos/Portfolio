@@ -1,12 +1,13 @@
 # Interactive project demos
 
-All five portfolio cards open interactive browser demos. No account is needed. Demo changes stay in memory for the current visit; Reset demo or reloading restores the original samples. These demos do not write to project databases.
+All six portfolio cards open interactive browser demos. No account is needed. Tracker and workflow demo changes stay in memory for the current visit; Reset demo or reloading restores their original samples. These demos do not write to project databases.
 
 - `cabus/index.html`: adapted from `ling-cosmos/cabus/preview/`. Add a task, mark it complete, create a goal and toggle a milestone, log a workout, add an expense, and inspect the budget. The original full hosted app remains linked separately. Paths are relative for GitHub Pages; persistent browser storage is disabled in this portfolio copy.
 - `seis.html`: browser simulation of registration and enrollment. Add a student, enroll in a course, inspect Reports, withdraw and reenroll. Full courses and duplicate enrollments are rejected. The original project remains PHP/MySQL.
 - `scamsignal.html`: browser adaptation of `option-2/features/scam-check/domain/analyze-message.ts`. Load risky, routine, or Filipino samples and run actual deterministic rules. Clear and reset are supported. No AI, URL requests, or message storage. No-match results never claim the message is safe.
 - `alaga.html`: synthetic care-log simulation. Confirm Taken/Skip/Snooze, undo a record, inspect inventory/history, and refill demo stock. It does not deliver device notifications, run OCR, or modify the Android project.
 - `boja.html`: user-authorized interactive concept. Create a fictional case, add a linked document title and deadline, change case status, and complete/reopen deadlines. It does not upload documents, calculate legal dates, or represent the team's approved application.
+- `chatbot.html`: full-page Client Chatbot demo. Ask portfolio FAQs, open project demos, or prepare and edit a client inquiry draft. New chat clears the current conversation. Email is sent only when the visitor sends the reviewed draft through their email service. Shares `../chat-widget.mjs` and `../chat-model.mjs` with the floating portfolio guide.
 
 ## Retained reference views
 

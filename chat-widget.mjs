@@ -1,7 +1,9 @@
-import {EMAIL,createChatState,welcome,respond,buildBrief,draftLinks} from './chat-model.mjs';
+import {EMAIL,createChatState,welcome,respond,buildBrief,draftLinks} from './chat-model.mjs?v=2';
 
 const launcher=document.querySelector('#chat-launcher');
 const panel=document.querySelector('#portfolio-chat');
+const standalone=panel.dataset.layout==='page';
+const portfolioBase=new URL('./',import.meta.url);
 const log=document.querySelector('#chat-log');
 const form=document.querySelector('#chat-form');
 const input=document.querySelector('#chat-message');
@@ -12,8 +14,8 @@ const summary=document.querySelector('#chat-summary');
 const draftStatus=document.querySelector('#chat-draft-status');
 let state=createChatState(),briefKey='';
 
-function closeChat(){panel.hidden=true;launcher.setAttribute('aria-expanded','false');launcher.focus();}
-function openChat(){panel.hidden=false;launcher.setAttribute('aria-expanded','true');(review.hidden?input:summary).focus();}
+function closeChat(){if(standalone)return;panel.hidden=true;launcher?.setAttribute('aria-expanded','false');launcher?.focus();}
+function openChat(){panel.hidden=false;launcher?.setAttribute('aria-expanded','true');(review.hidden?input:summary).focus();}
 function message(role,text,links=[]){
   const entry=document.createElement('div');entry.className=`chat-message chat-${role}`;
   const label=document.createElement('span');label.className='chat-author';label.textContent=role==='visitor'?'You':'Portfolio guide';
@@ -21,8 +23,8 @@ function message(role,text,links=[]){
   if(links.length){
     const group=document.createElement('div');group.className='chat-links';
     links.forEach(([label,url])=>{
-      const link=document.createElement('a');link.textContent=label;link.href=url;
-      if(!url.startsWith('#')){link.target='_blank';link.rel='noreferrer';}
+      const link=document.createElement('a');link.textContent=label;link.href=standalone||!url.startsWith('#')?new URL(url,portfolioBase).href:url;
+      if(standalone||!url.startsWith('#')){link.target='_blank';link.rel='noreferrer';}
       else link.addEventListener('click',closeChat);
       group.append(link);
     });entry.append(group);
@@ -57,8 +59,8 @@ function send(text,command='',display=text){
   input.placeholder=state.stage==='idle'?'Ask about skills, projects, or an inquiry…':state.stage==='request'?'Describe your project…':state.stage==='timing'?'Target date / budget, or “not sure”…':'Name / reply email, or “skip”…';
   if(result.handoff)showReview();else input.focus();
 }
-launcher.addEventListener('click',()=>panel.hidden?openChat():closeChat());
-document.querySelector('#chat-close').addEventListener('click',closeChat);
+launcher?.addEventListener('click',()=>panel.hidden?openChat():closeChat());
+document.querySelector('#chat-close')?.addEventListener('click',closeChat);
 document.querySelector('#chat-contact').addEventListener('click',()=>send('','contact','Contact John'));
 document.querySelector('#chat-new').addEventListener('click',()=>{
   state=createChatState();briefKey='';summary.value='';updateDraftLinks();input.value='';input.placeholder='Ask about skills, projects, or an inquiry…';
@@ -72,6 +74,8 @@ document.querySelector('#chat-copy').addEventListener('click',async()=>{
 summary.addEventListener('input',updateDraftLinks);
 form.addEventListener('submit',event=>{event.preventDefault();const value=input.value.trim();if(!value)return;input.value='';send(value);});
 input.addEventListener('keydown',event=>{if(event.key==='Enter'&&!event.shiftKey&&!event.isComposing){event.preventDefault();form.requestSubmit();}});
-document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!panel.hidden){event.preventDefault();closeChat();}});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!standalone&&!panel.hidden){event.preventDefault();closeChat();}});
 document.querySelector('#chat-recipient').textContent=EMAIL;
-message('guide',welcome.text);choices(welcome.choices);launcher.hidden=false;
+log.replaceChildren();message('guide',welcome.text);choices(welcome.choices);
+form.querySelector('[type="submit"]').disabled=false;
+if(launcher)launcher.hidden=false;
