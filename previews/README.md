@@ -1,6 +1,6 @@
 # Interactive project demos
 
-All six portfolio cards open interactive browser demos. No account is needed. Tracker and workflow demo changes stay in memory for the current visit; Reset demo or reloading restores their original samples. These demos do not write to project databases.
+These separate sample demos are retained alongside original project links. The portfolio's primary CABUS and ScamSignal cards now open their original hosted applications. Student Enrollment and Alaga primary cards show actual interfaces while public database setup is pending; Boja identifies its original Figma prototype and its access requirement. Tracker and workflow simulation changes stay in memory and do not write to project databases.
 
 - `cabus/index.html`: adapted from `ling-cosmos/cabus/preview/`. Add a task, mark it complete, create a goal and toggle a milestone, log a workout, add an expense, and inspect the budget. The original full hosted app remains linked separately. Paths are relative for GitHub Pages; persistent browser storage is disabled in this portfolio copy.
 - `seis.html`: browser simulation of registration and enrollment. Add a student, enroll in a course, inspect Reports, withdraw and reenroll. Full courses and duplicate enrollments are rejected. The original project remains PHP/MySQL.

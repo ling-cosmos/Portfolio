@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {EMAIL,createChatState,respond,buildBrief,draftLinks,PROJECTS} from './chat-model.mjs';
 
-test('all listed projects have grounded answers and internal demo destinations',()=>{
+test('all listed projects have grounded answers and their current project destinations',()=>{
   for(const project of PROJECTS){const r=respond(createChatState(),`Tell me about ${project.name}`);assert(r.reply.text.includes(project.name==='Student Enrollment'?'Enrollment':project.name));assert(r.reply.links.some(([,url])=>url===project.url));assert.equal(r.handoff,false);}
   assert.match(respond(createChatState(),'Is Boja a live application?').reply.text,/concept/);
   assert.match(respond(createChatState(),'Explain Alaga').reply.text,/does not deliver reminders/);

@@ -17,12 +17,12 @@ Open `http://127.0.0.1:4176/`.
 - Ten animated canvas butterflies with pointer avoidance
 - Responsive personal hero, skills, project gallery, profile story, and contact sections
 - Tools matrix covering HTML, CSS, Java, Bootstrap, Git, JavaScript, PHP, Python, MySQL, and GitHub
-- All six Projects cards open interactive browser demos without requiring an account
-- CABUS supports tasks, goal milestones, workouts, budgets, and expenses, with a separate link to its full hosted app
-- Student Enrollment supports sample registration, course capacity, enrollments, withdrawal, and reports
-- ScamSignal runs the project's deterministic message checks locally, with English and Filipino samples
-- Alaga supports confirmed synthetic dose outcomes, undo, stock, and retained demo history; its actual Android screenshots remain available
-- Boja supports a fictional case workspace with document index entries and deadlines; it remains a clearly labeled portfolio concept, with no private vault files
+- Project cards distinguish original live apps, original interface views, team prototypes, and separate sample demos
+- CABUS opens its full hosted app, with a separate account-free sample demo
+- Student Enrollment shows its original PHP interface and source; the hosted original-app database setup is pending, with a separate simplified demo available
+- ScamSignal opens its original hosted Next.js app with English, Filipino, and Bisaya rule-based checks; AI analysis is disabled
+- Alaga shows its original Expo web interface, Android screenshots, and team source; hosted database setup is pending, with a separate simplified care-log demo available
+- Boja identifies its original Figma prototype and access requirement, with a separate sample concept and no private vault exports
 - Databases certification section with an accessible preview and original certificate PDF
 - Reduced-motion, Save-Data, visibility, and manual motion controls
 - Browser-native contact options with a visible email address, copy support, Gmail compose link, and optional email-app link
