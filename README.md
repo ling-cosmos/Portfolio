@@ -19,9 +19,9 @@ Open `http://127.0.0.1:4176/`.
 - Tools matrix covering HTML, CSS, Java, Bootstrap, Git, JavaScript, PHP, Python, MySQL, and GitHub
 - Project cards distinguish original live apps, original interface views, team prototypes, and separate sample demos
 - CABUS opens its full hosted app, with a separate account-free sample demo
-- Student Enrollment shows its original PHP interface and source; the hosted original-app database setup is pending, with a separate simplified demo available
+- Student Enrollment opens its original hosted PHP app with isolated sample registration, enrollment, and reports
 - ScamSignal opens its original hosted Next.js app with English, Filipino, and Bisaya rule-based checks; AI analysis is disabled
-- Alaga shows its original Expo web interface, Android screenshots, and team source; hosted database setup is pending, with a separate simplified care-log demo available
+- Alaga opens its original hosted Expo web app with isolated sample sessions and persistent dose records; actual Android screenshots and team source remain available
 - Boja identifies its original Figma prototype and access requirement, with a separate sample concept and no private vault exports
 - Databases certification section with an accessible preview and original certificate PDF
 - Reduced-motion, Save-Data, visibility, and manual motion controls
